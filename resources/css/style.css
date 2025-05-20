@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF6B6B;
+    --primary-hover: #FF5252;
+    --background: #F8F9FA;
+    --text-primary: #2D3436;
+    --text-secondary: #636E72;
+    --accent: #4ECDC4;
+    --section-bg: #FFFFFF;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--accent), var(--primary-color));
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    color: var(--text-primary);
+}
+
+/* Link Styles */
+.download-link {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.download-link:hover {
+    color: var(--primary-color);
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Section */
+.video-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--section-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--card-shadow);
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px var(--card-shadow);
+}
+
+/* Travel Guide Section */
+.travel-guide {
+    padding: 2rem;
+    background: var(--section-bg);
+    border-radius: 20px;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px var(--card-shadow);
+}
+
+.travel-guide p {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.travel-guide img {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px var(--card-shadow);
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--accent), var(--primary-color));
+    margin: 2rem 0;
+    border-radius: 20px;
+    color: white;
+}
+
+.coming-soon img {
+    margin: 2rem 0;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.2));
+}
+
+.coming-soon h2 {
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    color: var(--text-secondary);
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .travel-guide p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .download-link {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
